@@ -447,7 +447,7 @@ const char *arUtilGetPixelFormatName(const AR_PIXEL_FORMAT arPixelFormat)
 
 const char *arUtilGetFileNameFromPath(const char *path)
 {
-	char *sep;
+	const char *sep;
 #ifdef _WIN32
     char *sep1;
 #endif
@@ -468,7 +468,7 @@ const char *arUtilGetFileNameFromPath(const char *path)
 char *arUtilGetFileBasenameFromPath(const char *path, const int convertToLowercase)
 {
     const char *file;
-    char *sep;
+    const char *sep;
     size_t len;
     char *ret;
     int i;
@@ -498,7 +498,7 @@ char *arUtilGetFileBasenameFromPath(const char *path, const int convertToLowerca
 
 char *arUtilGetFileExtensionFromPath(const char *path, const int convertToLowercase)
 {
-    char *sep;
+    const char *sep;
     size_t len;
     char *ret;
     int i;
@@ -530,7 +530,7 @@ char *arUtilGetFileExtensionFromPath(const char *path, const int convertToLowerc
 
 char *arUtilGetDirectoryNameFromPath(char *dir, const char *path, const size_t n, const int addSeparator)
 {
-	char *sep;
+	const char *sep;
 #ifdef _WIN32
     char *sep1;
 #endif
